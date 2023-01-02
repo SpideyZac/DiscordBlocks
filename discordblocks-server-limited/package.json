@@ -1,0 +1,30 @@
+{
+  "name": "discordblocks-server-limited",
+  "version": "1.0.0",
+  "description": "The backend limited server for Discord Blocks",
+  "main": "./src/index.ts",
+  "scripts": {
+    "dev": "nodemon -w ./src ./src/index.ts",
+    "build": "tsc",
+    "start": "node ./build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SpideyZac/DiscordBlocks/discordblocks-server-limited"
+  },
+  "keywords": [
+    "backend",
+    "limited",
+    "discordblocks"
+  ],
+  "author": "SpideyZac#8044 (Discord)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "nodemon": "^2.0.20",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "discord.js": "^14.7.1"
+  }
+}
