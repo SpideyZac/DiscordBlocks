@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Discord Blocks</title>
+        <script src="./node_modules/blockly/blockly_compressed.js"></script>
+        <script src="./node_modules/blockly/blocks_compressed.js"></script>
+        <script src="./node_modules/blockly/msg/en.js"></script>
+    </head>
+    <body>
+        <style> 
+            html, body {
+                height: 100%;
+                margin: 0;
+            }
+            body {
+                background-color: #fff;
+                font-family: sans-serif;
+                overflow: hidden;
+            }
+            h1 {
+                font-weight: normal;
+                font-size: 140%;
+            }
+            table {
+                height: 100%;
+                width: 100%;
+            }
+            #blocklyArea {
+                height: 99%;
+            }
+        </style>
+        
+        <table>
+            <tbody>
+                <tr>
+                    <td id="blocklyArea"> </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div id="blocklyDiv" style="position: absolute"></div>
+
+        <script src="./src/blockly/blocks.js"></script>
+        <script src="./src/blockly/generator.js"></script>
+        <script src="./src/manager/runner.js"></script>
+        <script defer src="./src/blockly/injector.js"></script>
+    </body>
+</html>

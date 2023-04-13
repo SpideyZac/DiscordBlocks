@@ -1,0 +1,22 @@
+{
+  "name": "discord-blocks",
+  "version": "1.0.0",
+  "description": "Discord Blocks is a tool that allows you to create Discord bots using block code",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "nodemon --ext * -w ./ --exec yarn start",
+    "build": "electron-packager ./ DiscordBlocks"
+  },
+  "author": "SpideyZac",
+  "license": "MIT",
+  "dependencies": {
+    "blockly": "^9.3.1",
+    "discord.js": "^14.9.0",
+    "electron": "^24.0.0",
+    "electron-packager": "^17.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
